@@ -1,0 +1,30 @@
+{
+	"name": "metadatadataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "onpremsqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "Schema_name",
+				"type": "varchar"
+			},
+			{
+				"name": "Table_name",
+				"type": "varchar"
+			},
+			{
+				"name": "LoadType",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Metadata_Ingestion"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

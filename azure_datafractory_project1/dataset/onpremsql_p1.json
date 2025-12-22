@@ -1,0 +1,169 @@
+{
+	"name": "onpremsql_p1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "onpremsqlserser_ls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "Pokemon",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Type",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Species",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Height",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Weight",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Abilities",
+				"type": "nvarchar"
+			},
+			{
+				"name": "EV_Yield",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Catch_Rate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Base_Friendship",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Base_Exp",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Growth_Rate",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Egg_Groups",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Gender",
+				"type": "nvarchar"
+			},
+			{
+				"name": "Egg_Cycles",
+				"type": "nvarchar"
+			},
+			{
+				"name": "HP_Base",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "HP_Min",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "HP_Max",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Attack_Base",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Attack_Min",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Attack_Max",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Defense_Base",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Defense_Min",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Defense_Max",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Special_Attack_Base",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Special_Attack_Min",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Special_Attack_Max",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Special_Defense_Base",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Special_Defense_Min",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Special_Defense_Max",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Speed_Base",
+				"type": "tinyint",
+				"precision": 3
+			},
+			{
+				"name": "Speed_Min",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Speed_Max",
+				"type": "smallint",
+				"precision": 5
+			},
+			{
+				"name": "Modifieddate",
+				"type": "nvarchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "migration",
+			"table": "pokemonDB_dataset"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

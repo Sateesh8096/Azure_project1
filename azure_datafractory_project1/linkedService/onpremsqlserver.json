@@ -1,0 +1,21 @@
+{
+	"name": "onpremsqlserver",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SATEESH\\SQLEXPRESS01",
+			"database": "datamigration",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "sateesh",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI2M2VlZmRlMS1kZGYxLTQ4MTMtYmZmNy1jYTEyYjNmNTY2ZDIiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SHIRPROJECT",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"name": "pskproject1",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "202a075e-2a9c-4a8f-b263-f6dd34a03ac9",
+		"tenantId": "00ddeff7-cd88-4790-ac46-32cf17c1fa6c"
+	}
+}

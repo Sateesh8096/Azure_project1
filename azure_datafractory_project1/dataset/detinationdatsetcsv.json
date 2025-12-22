@@ -1,0 +1,39 @@
+{
+	"name": "detinationdatsetcsv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "destinationlinkservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Schema_name": {
+				"type": "string"
+			},
+			"Table_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().Table_name",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().Schema_name",
+					"type": "Expression"
+				},
+				"fileSystem": "bronze"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
