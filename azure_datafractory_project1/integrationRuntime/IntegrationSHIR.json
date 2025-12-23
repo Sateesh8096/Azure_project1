@@ -1,0 +1,6 @@
+{
+	"name": "IntegrationSHIR",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}
